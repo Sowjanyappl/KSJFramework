@@ -1,0 +1,6 @@
+framework module Pods_KSJFramework {
+  umbrella header "Pods-KSJFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

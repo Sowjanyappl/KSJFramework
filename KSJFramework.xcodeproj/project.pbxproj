@@ -13,9 +13,12 @@
 		C213C25925BE911F0027B904 /* RTCCapturerSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25425BE911F0027B904 /* RTCCapturerSettingsModel.swift */; };
 		C213C25A25BE911F0027B904 /* RTCSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25525BE911F0027B904 /* RTCSettingsStore.swift */; };
 		C213C25B25BE911F0027B904 /* RTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25625BE911F0027B904 /* RTCClient.swift */; };
+		EDA98FECAD5087F16BB694B2 /* Pods_KSJFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F1D51762F7230577194223 /* Pods_KSJFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F1D51762F7230577194223 /* Pods_KSJFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KSJFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		039E6DF49A58815ADABD0EB1 /* Pods-KSJFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSJFramework.debug.xcconfig"; path = "Target Support Files/Pods-KSJFramework/Pods-KSJFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		C213C24625BE90E00027B904 /* KSJFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSJFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C213C24925BE90E00027B904 /* KSJFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSJFramework.h; sourceTree = "<group>"; };
 		C213C24A25BE90E00027B904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C213C25425BE911F0027B904 /* RTCCapturerSettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCCapturerSettingsModel.swift; sourceTree = "<group>"; };
 		C213C25525BE911F0027B904 /* RTCSettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCSettingsStore.swift; sourceTree = "<group>"; };
 		C213C25625BE911F0027B904 /* RTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCClient.swift; sourceTree = "<group>"; };
+		EAA8790A6AD3CDF615C0523B /* Pods-KSJFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSJFramework.release.xcconfig"; path = "Target Support Files/Pods-KSJFramework/Pods-KSJFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA98FECAD5087F16BB694B2 /* Pods_KSJFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				C213C24825BE90E00027B904 /* KSJFramework */,
 				C213C24725BE90E00027B904 /* Products */,
+				C255314820132FC2E767EA1F /* Pods */,
+				CC7A3E69939F85E55844EA23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = KSJFramework;
 			sourceTree = "<group>";
 		};
+		C255314820132FC2E767EA1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				039E6DF49A58815ADABD0EB1 /* Pods-KSJFramework.debug.xcconfig */,
+				EAA8790A6AD3CDF615C0523B /* Pods-KSJFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC7A3E69939F85E55844EA23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00F1D51762F7230577194223 /* Pods_KSJFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -85,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C213C24E25BE90E00027B904 /* Build configuration list for PBXNativeTarget "KSJFramework" */;
 			buildPhases = (
+				7C886129C57C44205BB816E1 /* [CP] Check Pods Manifest.lock */,
 				C213C24125BE90E00027B904 /* Headers */,
 				C213C24225BE90E00027B904 /* Sources */,
 				C213C24325BE90E00027B904 /* Frameworks */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C886129C57C44205BB816E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KSJFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C213C24225BE90E00027B904 /* Sources */ = {
@@ -281,6 +332,7 @@
 		};
 		C213C24F25BE90E00027B904 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039E6DF49A58815ADABD0EB1 /* Pods-KSJFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +359,7 @@
 		};
 		C213C25025BE90E00027B904 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA8790A6AD3CDF615C0523B /* Pods-KSJFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
