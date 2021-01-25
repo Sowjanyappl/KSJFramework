@@ -1,16 +1,20 @@
 PODS:
   - GoogleWebRTC (1.1.31999)
+  - SwiftWebSocket (2.7.0)
 
 DEPENDENCIES:
   - GoogleWebRTC
+  - SwiftWebSocket
 
 SPEC REPOS:
   trunk:
     - GoogleWebRTC
+    - SwiftWebSocket
 
 SPEC CHECKSUMS:
   GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+  SwiftWebSocket: 612c9729fd503cb6b0b8b45390c788686dac306f
 
-PODFILE CHECKSUM: 252ec904ff7f9b7e3618284e336ee23658ec2f07
+PODFILE CHECKSUM: bfb572f98762b9a35a472cfa380f3db9c2b8c22a
 
 COCOAPODS: 1.10.1

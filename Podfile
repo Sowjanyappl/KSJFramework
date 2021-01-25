@@ -7,5 +7,6 @@ target 'KSJFramework' do
 
   # Pods for KSJFramework
 pod 'GoogleWebRTC'
+pod 'SwiftWebSocket'
 
 end

@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   
   
 
-  spec.source       = { :git => "https://github.com/Sowjanyappl/KSJFramework.git", :tag => "1.0.4" }
+  spec.source       = { :git => "https://github.com/Sowjanyappl/KSJFramework.git", :tag => "1.0.5" }
 
 
   spec.source_files = "KSJFramework"
@@ -35,6 +35,6 @@ Pod::Spec.new do |spec|
  
 
 
-   spec.dependency "GoogleWebRTC"
+   spec.dependency "GoogleWebRTC", "SwiftWebSocket"
 
 end
