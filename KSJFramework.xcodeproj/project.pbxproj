@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C213C24B25BE90E00027B904 /* KSJFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C213C24925BE90E00027B904 /* KSJFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C213C25725BE911F0027B904 /* AVCaptureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25225BE911F0027B904 /* AVCaptureState.swift */; };
+		C213C25825BE911F0027B904 /* RTCCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25325BE911F0027B904 /* RTCCapturer.swift */; };
+		C213C25925BE911F0027B904 /* RTCCapturerSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25425BE911F0027B904 /* RTCCapturerSettingsModel.swift */; };
+		C213C25A25BE911F0027B904 /* RTCSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25525BE911F0027B904 /* RTCSettingsStore.swift */; };
+		C213C25B25BE911F0027B904 /* RTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C213C25625BE911F0027B904 /* RTCClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C213C24625BE90E00027B904 /* KSJFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSJFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C213C24925BE90E00027B904 /* KSJFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSJFramework.h; sourceTree = "<group>"; };
 		C213C24A25BE90E00027B904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C213C25225BE911F0027B904 /* AVCaptureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureState.swift; sourceTree = "<group>"; };
+		C213C25325BE911F0027B904 /* RTCCapturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCCapturer.swift; sourceTree = "<group>"; };
+		C213C25425BE911F0027B904 /* RTCCapturerSettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCCapturerSettingsModel.swift; sourceTree = "<group>"; };
+		C213C25525BE911F0027B904 /* RTCSettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCSettingsStore.swift; sourceTree = "<group>"; };
+		C213C25625BE911F0027B904 /* RTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				C213C24925BE90E00027B904 /* KSJFramework.h */,
+				C213C25225BE911F0027B904 /* AVCaptureState.swift */,
+				C213C25325BE911F0027B904 /* RTCCapturer.swift */,
+				C213C25425BE911F0027B904 /* RTCCapturerSettingsModel.swift */,
+				C213C25625BE911F0027B904 /* RTCClient.swift */,
+				C213C25525BE911F0027B904 /* RTCSettingsStore.swift */,
 				C213C24A25BE90E00027B904 /* Info.plist */,
 			);
 			path = KSJFramework;
@@ -94,6 +109,7 @@
 				TargetAttributes = {
 					C213C24525BE90E00027B904 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -130,6 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C213C25A25BE911F0027B904 /* RTCSettingsStore.swift in Sources */,
+				C213C25925BE911F0027B904 /* RTCCapturerSettingsModel.swift in Sources */,
+				C213C25725BE911F0027B904 /* AVCaptureState.swift in Sources */,
+				C213C25825BE911F0027B904 /* RTCCapturer.swift in Sources */,
+				C213C25B25BE911F0027B904 /* RTCClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +282,7 @@
 		C213C24F25BE90E00027B904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NN4FAH5SZT;
@@ -277,6 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.peoplelink.KSJFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +308,7 @@
 		C213C25025BE90E00027B904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NN4FAH5SZT;
