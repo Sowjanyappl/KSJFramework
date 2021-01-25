@@ -23,11 +23,11 @@ Pod::Spec.new do |spec|
   
   
 
-  spec.source       = { :git => "https://github.com/Sowjanyappl/KSJFramework.git", :tag => "1.0.13" }
+  spec.source       = { :git => "https://github.com/Sowjanyappl/KSJFramework.git", :tag => "1.0.14" }
 
 
-  spec.source_files = "KSJFramework/*.{h,swift}"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.source_files = "KSJFramework/*.{h,swift}"
+  # spec.exclude_files = "Classes/Exclude"
 
   
 
